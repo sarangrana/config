@@ -1,0 +1,25 @@
+apiVersion: apps/v1beta2  # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: jirautil
+  labels:
+    app: jirautil
+spec:
+  selector:
+    matchLabels:
+      app: jirautil
+      tier: jirautil
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: jirautil
+        tier: jirautil
+    spec:
+      containers:
+      - image: sarangrana/jirautil
+        name: jirautil
+        ports:
+        - containerPort: 8080
+          name: jirautil
