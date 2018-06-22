@@ -11,7 +11,7 @@ spec:
       app: jirautil
       tier: jirautil
   strategy:
-    type: Recreate
+    type: RollingUpdate
   template:
     metadata:
       labels:
