@@ -2,9 +2,9 @@
   "kind": "Namespace",
   "apiVersion": "v1",
   "metadata": {
-    "name": "qa",
+    "name": "prod",
     "labels": {
-      "name": "qa"
+      "name": "prod"
     }
   }
 }
