@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jirautil
+  labels:
+    app: jirautil
+spec:
+  ports:
+    - port: 8080
+  selector:
+    app: jirautil
+    tier: jirautil
+  type: NodePort
