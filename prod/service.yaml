@@ -11,4 +11,4 @@ spec:
   selector:
     app: jirautil
     tier: jirautil
-  type: NodePort
+  type: LoadBalancer
