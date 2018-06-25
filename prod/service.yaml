@@ -8,6 +8,9 @@ metadata:
 spec:
   ports:
     - port: 80
+      name: http
+      targetPort: 8080
+      protocol: TCP
   selector:
     app: jirautil
     tier: jirautil
