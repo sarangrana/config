@@ -6,6 +6,7 @@ metadata:
   labels:
     app: jirautil
 spec:
+  replicas: 3
   selector:
     matchLabels:
       app: jirautil
