@@ -19,7 +19,7 @@ spec:
         tier: jirautil
     spec:
       containers:
-      - image: sarangrana/k8emsprod:3071f79866526062fcdd6689bfde14cfab6a04e778
+      - image: sarangrana/k8emsprod:323110aaf5a78444cd44e552addfdb290845ecef9b
         name: jirautil
         ports:
         - containerPort: 8080
